@@ -1,13 +1,10 @@
-<template >
+<template>
   <div>
     sku
   </div>
 </template>
 <script>
 export default {
-  name:'Sku'
+  name: 'Sku'
 }
 </script>
-<style>
-  
-</style>

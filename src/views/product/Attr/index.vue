@@ -1,13 +1,10 @@
-<template >
+<template>
   <div>
     attr
   </div>
 </template>
 <script>
 export default {
-  name:'Attr'
+  name: 'Attr'
 }
-</script>
-<style>
-  
-</style>
+</script >

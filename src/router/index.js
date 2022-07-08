@@ -59,7 +59,7 @@ export const constantRoutes = [
     component: Layout,
     name: 'Product',
     meta: { title: '商品管理', icon: 'el-icon-goods' },
-    children:[
+    children: [
       {
         path: 'trademark',
         name: 'TradeMark',
@@ -83,7 +83,7 @@ export const constantRoutes = [
         name: 'Sku',
         component: () => import('@/views/product/Sku'),
         meta: { title: 'Sku管理' }
-      },
+      }
     ]
   },
   // 404 page must be placed at the end !!!
