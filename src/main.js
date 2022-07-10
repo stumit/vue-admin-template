@@ -14,7 +14,8 @@ import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
-import api from '@/api' // 引入相关的api接口
+
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -34,9 +35,12 @@ Vue.use(ElementUI, { locale })
 // Vue.use(ElementUI)
 
 Vue.config.productionTip = false
-
+import api from '@/api' // 引入相关的api接口
 // 将引入的api接口，放到组件实例原型$API上,这样做之后要使用时可以直接使用，不用引入
 Vue.prototype.$API = api
+import CategorySelect from '@/components/CategorySelect' // 引入三级联动组件
+// 将三级联动组件注册为全局组件
+Vue.component(CategorySelect.name, CategorySelect)
 new Vue({
   el: '#app',
   router,
