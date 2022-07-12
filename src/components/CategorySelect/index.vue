@@ -68,7 +68,7 @@ export default {
         this.list3 = result.data
       }
     },
-    // 当三级分类option发生变化时，将各个分类的id值传递给父组件Attr
+    // 当三级分类option发生变化时，将各个分类的id值传递给父组件
     handler3() {
       this.$emit('getCategoryId', this.cFrom)
     }

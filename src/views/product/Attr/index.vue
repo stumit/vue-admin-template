@@ -1,6 +1,7 @@
 <template>
   <div>
     <el-card style="margin: 20px 0px;">
+      <!-- 三级联动的全局注册组件 -->
       <CategorySelect @getCategoryId='getCategoryId' :show="!isShowTable" />
     </el-card>
     <el-card>
