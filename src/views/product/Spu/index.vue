@@ -98,6 +98,7 @@ export default {
       this.scent = 2
       this.isShowTable = false 
     },
+    // spuFrom子组件点击取消传来的回调
     changeScene(scene){
       this.scent = scene
     }
